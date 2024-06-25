@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <title>RocketCard</title>
+</head>
+<body>
+  <div class="container">
+    <main class="content" id="content">
+      <h2>Compartilhe seu #rocketcard</h2>
+      <aside class="card" id="card" onclick="clipBoard()">
+        <section class="card-user">
+          <header>
+            <div class="logo">
+              <img src="assets/logo.svg" alt="">
+            </div>
+            <h1 id="userName">UserName</h1>
+          </header>
+          <img class="avatar" id="avatar" src="https://avatars.githubusercontent.com/u/121871984?v=4" alt="">
+          <nav class="data">
+            <ul>
+              <li>
+                <img src="assets/followers.svg" alt="">
+                <span id="followers">716 Seguidores</span>
+              </li>
+              <li>
+                <img src="assets/following.svg" alt="">
+                <span id="followings">716 Seguindo</span>
+              </li>
+              <li>
+                <img src="assets/repository.svg" alt="">
+                <span id="repository">76 Repositórios</span>
+              </li>
+              <li>
+                <img src="assets/company.svg" alt="">
+                <span id="company">@rocketseat</span>
+              </li>
+              <li>
+                <img src="assets/location.svg" alt="">
+                <span id="locations">São Paulo</span>
+              </li>
+            </ul>
+          </nav>
+          <footer>
+            <img src="assets/logo.svg" alt="">
+            <h1>ROCKETCARD</h1>
+          </footer>
+        </section>
+      </aside>
+      <div class="notification-clipboard" id="notification-clipboard">Conteúdo copiado!</div>
+    </main>
+    <div class="container-button">
+      <div class="notification-user" id="notification-user">Usuário não encontrado!</div>
+      <form class="card-login" id="card-login">
+        <label for="">Digite o nome do usuário</label>
+        <input type="text" id="username" placeholder="Digite aqui">
+        <button type="submit">Buscar</button>
+      </form>
+      <div class="line"></div>
+      <section class="card-button">
+        <h3>Customizar Rocketcard</h3>
+        <button id="change-background">
+          Gerar background
+        </button>
+      </section>
+      <div class="line"></div>
+      <section class="select">
+        <h3>Backgrounds recomendados</h3>
+        <div class="buttons">
+          <button id="black" onclick=""></button>
+          <button id="purple"></button>
+          <button id="white"></button>
+        </div>
+      </section>
+      <div class="line"></div>
+      <section class="download">
+        <h3>Baixe seu rocketcard</h3>
+        <button onclick="downloadCard()">
+          Download
+        </button>
+      </section>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+</body>
+</html>

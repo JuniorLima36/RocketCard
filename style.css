@@ -1,0 +1,361 @@
+:root {
+  --bg: #000000;
+  --bg-card: #0E1218;
+  --text: #F1F1F1;
+  --img-profile: #8257e5;
+  --buttons: #FFF;
+  --border-button: #1A1A1A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 958px;
+  gap: 100px;
+  background-color: var(--bg-card);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.content h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: var(--bg);
+}
+
+.card-user {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 95%;
+  margin: 30px 0px;
+  padding: 30px 0px;
+  border-radius: 50px;
+  background-color: var(--bg-card);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px 34px 35px;
+  gap: 10px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  border: 2px solid var(--buttons);
+}
+
+.logo img {
+  width: 36px;
+  height: 36px;
+}
+
+header #userName {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.card-user #avatar {
+  width: 372px;
+  height: 372px;
+  margin-left: 65px;
+  border-radius: 100%;
+  border: 10px solid var(--img-profile);
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 350px 0px 0px 25px;
+}
+
+.data ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 203px;
+  height: 194px;
+  padding: 25px;
+  gap: 5px;
+  border-radius: 50px;
+  background: linear-gradient(to bottom, 
+    #000,
+    #4645459c,
+    #3e383842
+  );
+}
+
+.data li {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.data li img {
+  width: 20px;
+  height: 20px;
+}
+
+.data li span{
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+footer {
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+  padding: 115px 30px 5px 0px;
+}
+
+footer img {
+  width: 28px;
+  height: 34px;
+}
+
+footer h1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.container-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 55px;
+  padding: 50px;
+  border-radius: 50px;
+  border: 8px solid var(--bg);
+}
+
+.line {
+  width: 250px;
+  border: 1px solid var(--img-profile);
+}
+
+.card-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-login label {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.card-login input {
+  border: none;
+  outline: none;
+  width: 225px;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card-login button {
+  border: none;
+  width: 229px;
+  height: 59px;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+.card-login button:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  background-color: var(--bg);
+}
+
+
+.card-button {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-button h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.card-button button {
+  border: none;
+  width: 229px;
+  height: 59px;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+.card-button button:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  background-color: var(--bg);
+}
+
+.select {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.select h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.buttons button {
+  width: 35px;
+  height: 35px;
+  border: 2px solid grey;
+  border-radius: 100%;
+}
+
+.buttons button:hover {
+  cursor: pointer;
+  transform: scale(1.10);
+  background-color: var(--border-button);
+}
+
+#black {
+  background-color: var(--bg);
+}
+
+#purple {
+  background-color: var(--img-profile);
+}
+
+#white {
+  background-color: var(--buttons);
+}
+
+.download {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.download h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.download button {
+  border: none;
+  width: 229px;
+  height: 59px;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+.download button:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  background-color: var(--bg);
+}
+
+.notification-clipboard {
+  display: none;
+  position: fixed;
+  margin: 535px 0px 0px 210px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: var(--text);
+  background-color: var(--img-profile);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.notification-user {
+  display: none;
+  position: fixed;
+  margin: 0px 0px 250px 0px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: var(--text);
+  background-color: var(--img-profile);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 500px) {
+  body {
+    background-color: var(--bg-card);
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 350px 0px;
+    gap: 0px;
+  }
+
+  .card {
+    width: 400px;
+  }
+
+  .notification-clipboard {
+    right: 25px;
+    bottom: 115px;
+  }
+
+  .notification-user {
+    right: 100px;
+    bottom: 255px;
+  }
+}
